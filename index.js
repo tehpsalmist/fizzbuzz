@@ -1,5 +1,2 @@
-let num = 0
-while (num < 101) {
-	num % 5 === 0 && num % 3 === 0 ? console.log('fizz buzz') : num % 3 === 0 ? console.log('fizz') : num % 5 === 0 ? console.log('buzz') : console.log(num)
-	num++
-}
+Array(100).forEach((item, index) => (index + 1) % 5 === 0 && (index + 1) % 3 === 0 ? console.log('fizz buzz') : (index + 1) % 3 === 0 ? console.log('fizz') : (index + 1) % 5 === 0 ? console.log('buzz') : console.log((index + 1)))
+console.log('its running')
