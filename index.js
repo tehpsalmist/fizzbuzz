@@ -1,2 +1,1 @@
-Array(100).forEach((item, index) => (index + 1) % 5 === 0 && (index + 1) % 3 === 0 ? console.log('fizz buzz') : (index + 1) % 3 === 0 ? console.log('fizz') : (index + 1) % 5 === 0 ? console.log('buzz') : console.log((index + 1)))
-console.log('its running')
+Array(100).fill(undefined).map((item, index) => index + 1).forEach(num => num % 5 === 0 && num % 3 === 0 ? console.log('fizz buzz') : num % 3 === 0 ? console.log('fizz') : num % 5 === 0 ? console.log('buzz') : console.log(num))
