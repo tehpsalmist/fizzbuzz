@@ -7,16 +7,8 @@ const buzz = function () {
 const fizzBuzz = function () {
 	console.log('fizz buzz')
 }
-
-const printFizzBuzz = function () {
-	let num = 0
-	while (num < 101) {
-		let fizzyNum = num % 3
-		let buzzyNum = num % 5
-		let bothyNum = fizzyNum + buzzyNum
-
-		bothyNum === 0 ? fizzBuzz() : fizzyNum === 0 ? fizz() : buzzyNum === 0 ? buzz() : console.log(num)
-		num++
-	}
+let num = 0
+while (num < 101) {
+	num % 5 === 0 && num % 3 === 0 ? fizzBuzz() : num % 3 === 0 ? fizz() : num % 5 === 0 ? buzz() : console.log(num)
+	num++
 }
-printFizzBuzz()
